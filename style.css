@@ -1,43 +1,85 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root{
-    font-size: 62.5%;
+  font-size: 62.5%;
 
-    /* Cores usadas no projeto */
-    --color-base-white: white;
-    --color-base-purple: 
+  /* Cores usadas no projeto */
+  --color-base-white: white;
+  --color-base-purple-letter: #34355B;
+  --color-base-input: #DCE2E9;
+  --color-base-button: #7879F1;
 }
 
 html, body, input, button{
-    font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 body{
-    background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
-    height: 100vh;
-    font-size: 1.6rem;
+  background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
+  height: 100vh;
+  font-size: 1.6rem;
 
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
+}
+
+.hide{
+  display: none;
 }
 
 main{
-    background-color: var(--color-base-white);
-    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-    border-radius: 0.6rem;
-    padding: 4.8rem 6.4rem;
+  background-color: var(--color-base-white);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 4.8rem 6.4rem;
 
-    width: min(42.8rem, 90%);
-    margin-top: -10rem;
+  width: min(42.8rem, 90%);
+  margin-top: -10rem;
 
-    text-align: center;
+  text-align: center;
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
 }
+
+h1, p{
+  color: var(--color-base-purple-letter)
+}
+
+p{
+  opacity: 0.8;
+}
+
+form{
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input, button{
+  border: none;
+  padding: 1.6rem;
+}
+
+input{
+  background-color: var(--color-base-input);
+  width: 6rem;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+button{
+  background-color: var(--color-base-button);
+  color: var(--color-base-white);
+  font-weight: bold;
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+}
+
+
