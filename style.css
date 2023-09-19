@@ -27,6 +27,13 @@ body{
   place-items: center;
 }
 
+button{
+  background-color: var(--color-base-button);
+  color: var(--color-base-white);
+  font-weight: bold;
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+}
+
 .hide{
   display: none;
 }
@@ -43,6 +50,7 @@ main{
   text-align: center;
 }
 
+/* Screen1 */
 h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
@@ -75,11 +83,16 @@ input{
   border-bottom-left-radius: 0.4rem;
 }
 
-button{
-  background-color: var(--color-base-button);
-  color: var(--color-base-white);
-  font-weight: bold;
-  border-radius: 0rem 0.4rem 0.4rem 0rem;
+
+
+/* Screen2 */
+h2{
+  font-size: 2.4rem;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--color-base-purple-letter);
+  margin-bottom: 3.3rem;
 }
 
-
+.screen2 button{
+  border-radius: 0.4rem;
+}
