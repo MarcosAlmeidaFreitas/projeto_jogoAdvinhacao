@@ -12,6 +12,7 @@
   --color-base-purple-letter: #34355B;
   --color-base-input: #DCE2E9;
   --color-base-button: #7879F1;
+  --color-base-button-hover: #5050be;
 }
 
 html, body, input, button{
@@ -32,6 +33,12 @@ button{
   color: var(--color-base-white);
   font-weight: bold;
   border-radius: 0rem 0.4rem 0.4rem 0rem;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--color-base-button-hover);
+  transition: 0.3s;
 }
 
 .hide{
